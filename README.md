@@ -11,6 +11,12 @@ mvn --batch-mode unleash:perform
 ```
 This will execute the default release workflow with default release version: patch version incrementation.
 
+Once release is successful, we should get:
+1. a commit in current branch to update version to next development version. For instance `1.2.3-SNAPSHOT` to `1.2.4-SNAPSHOT`
+1. a commit outside any branch tagged `1.2.3` with the original HEAD commit (last `1.2.3-SNAPSHOT`) as parent
+1. a new release appearing on github: [releases](releases)
+1. the released artifact on the package manager: [packages](packages)
+
 # Release setup
 
 To make it work I had to fill the `<scm>` and `<distributionManagement>` parts in the `pom.xml`. I also had to configure the server accordingly in my `settings.xml` to give it the correct access rights.
