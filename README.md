@@ -3,7 +3,7 @@ Test project for quarkus, because this is a very cool tool.
 
 # Release process
 
-It is reoleased using the [unleash maven plugin](https://github.com/shillner/unleash-maven-plugin) that allows a lot of customization and safe rollback on error.
+It is released using the [unleash maven plugin](https://github.com/shillner/unleash-maven-plugin) that allows a lot of customization and safe rollback on error.
 
 To release, one should execute:
 ```bash
