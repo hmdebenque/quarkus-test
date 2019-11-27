@@ -14,8 +14,8 @@ This will execute the default release workflow with default release version: pat
 Once release is successful, we should get:
 1. a commit in current branch to update version to next development version. For instance `1.2.3-SNAPSHOT` to `1.2.4-SNAPSHOT`
 1. a commit outside any branch tagged `1.2.3` with the original HEAD commit (last `1.2.3-SNAPSHOT`) as parent
-1. a new release appearing on github: [releases](https://github.com/hmdebenque/quarkus-test/releases)
-1. the released artifact on the package manager: [packages](https://github.com/hmdebenque/quarkus-test/packages)
+1. a new release appearing on github [releases](https://github.com/hmdebenque/quarkus-test/releases)
+1. the released artifact on the [package manager](https://github.com/hmdebenque/quarkus-test/packages)
 
 # Release setup
 
